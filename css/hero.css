@@ -1,0 +1,236 @@
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1440px;
+  background-image: url("/javaScript/Academy/ShopMarkup-hard/img/mediterranean.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 99;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1440px;
+  height: 58px;
+  width: 100%;
+  background: #3BB77E;
+}
+.hero__header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero__header__menu__li {
+  list-style-type: none;
+}
+.hero__header__menu__hamburger {
+  display: none;
+}
+.hero__header__menu__bestsellers {
+  position: relative;
+  display: block;
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  -webkit-animation: position-menu 1s both linear;
+          animation: position-menu 1s both linear;
+}
+.hero__header__menu__bestsellers:hover {
+  padding: 13.5px 0;
+  border-bottom: 4px solid white;
+}
+.hero__header__menu__articles {
+  display: block;
+  position: relative;
+  margin: 0 20px;
+  color: white;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
+  -webkit-animation: position-menu 1s 0.5s linear both;
+          animation: position-menu 1s 0.5s linear both;
+}
+.hero__header__menu__articles:hover {
+  padding: 13.5px 0;
+  border-bottom: 4px solid white;
+}
+.hero__header__menu__order {
+  display: block;
+  position: relative;
+  margin: 0 95px 0 20px;
+  color: white;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
+  -webkit-animation: position-menu 1s 1s linear both;
+          animation: position-menu 1s 1s linear both;
+}
+.hero__header__menu__order:hover {
+  padding: 13.5px 0;
+  border-bottom: 4px solid white;
+}
+.hero__header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-decoration: none;
+}
+.hero__header__logo .img__background {
+  position: absolute;
+  left: 25px;
+  top: 9px;
+  -webkit-animation: rotate 4s;
+          animation: rotate 4s;
+}
+.hero__header__logo .img__vector_7 {
+  position: absolute;
+  left: 36.39px;
+  top: 11.89px;
+  -webkit-animation: opacity 0.5s both;
+          animation: opacity 0.5s both;
+}
+.hero__header__logo .img__vector_6 {
+  position: absolute;
+  left: 51.45px;
+  top: 20.39px;
+  -webkit-animation: opacity 0.5s 0.5s both;
+          animation: opacity 0.5s 0.5s both;
+}
+.hero__header__logo .img__vector_5 {
+  position: absolute;
+  left: 27.89px;
+  top: 30.55px;
+  -webkit-animation: opacity 0.5s 1s both;
+          animation: opacity 0.5s 1s both;
+}
+.hero__header__logo .img__vector_4 {
+  position: absolute;
+  left: 46.55px;
+  top: 35.45px;
+  -webkit-animation: opacity 0.5s 1.5s both;
+          animation: opacity 0.5s 1.5s both;
+}
+.hero__header__logo .img__vector_3 {
+  position: absolute;
+  left: 28.31px;
+  top: 19.38px;
+  -webkit-animation: opacity 0.5s 2s both;
+          animation: opacity 0.5s 2s both;
+}
+.hero__header__logo .img__vector_2 {
+  position: absolute;
+  left: 35.38px;
+  top: 31.05px;
+  -webkit-animation: opacity 0.5s 2.5s both;
+          animation: opacity 0.5s 2.5s both;
+}
+.hero__header__logo .img__vector_1 {
+  position: absolute;
+  left: 47.05px;
+  top: 27.36px;
+  -webkit-animation: opacity 0.5s 3s both;
+          animation: opacity 0.5s 3s both;
+}
+.hero__header__logo .img__vector {
+  position: absolute;
+  left: 43.36px;
+  top: 12.31px;
+  -webkit-animation: opacity 0.5s 3.5s both;
+          animation: opacity 0.5s 3.5s both;
+}
+.hero__header__logo__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 71px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+.hero__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 966px;
+}
+.hero__section__text {
+  position: relative;
+  text-align: center;
+  max-width: 586px;
+  min-height: 162px;
+  color: #FFFFFF;
+  line-height: 54px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  -webkit-animation: position 2s linear both;
+          animation: position 2s linear both;
+}
+.hero__section__button {
+  max-width: 200px;
+  margin: 47px 0 128px;
+  padding: 10px 34px;
+  border-radius: 4px;
+  border: none;
+  background-color: #3BB77E;
+  color: #FFFFFF;
+  line-height: 150%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+  -webkit-animation: opacity 2s 2s linear both;
+          animation: opacity 2s 2s linear both;
+  cursor: pointer;
+}
+.hero__section__button:hover {
+  color: black;
+}/*# sourceMappingURL=hero.css.map */

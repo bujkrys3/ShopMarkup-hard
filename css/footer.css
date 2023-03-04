@@ -1,0 +1,44 @@
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 1440px;
+  font-size: 30px;
+  background-color: #DEF9EC;
+}
+.footer__social__facebook {
+  margin: 10px 20px;
+  color: black;
+  font-size: 50px;
+}
+.footer__social__facebook:hover {
+  color: gray;
+}
+.footer__social__facebook:active {
+  color: red;
+}
+.footer__social__twitter {
+  margin: 10px 20px;
+  color: black;
+  font-size: 50px;
+}
+.footer__social__twitter:hover {
+  color: gray;
+}
+.footer__social__twitter:active {
+  color: red;
+}
+.footer__social__linkedin {
+  margin: 10px 100px 10px 20px;
+  color: black;
+  font-size: 50px;
+}
+.footer__social__linkedin:hover {
+  color: gray;
+}
+.footer__social__linkedin:active {
+  color: red;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,102 @@
+@media (max-width: 376px) {
+  .hero__header__menu__hamburger {
+    display: block;
+    margin: 0 20px 0 0;
+    color: black;
+    font-size: 20px;
+  }
+  .hero__header__menu__bestsellers {
+    display: none;
+  }
+  .hero__header__menu__articles {
+    display: none;
+  }
+  .hero__header__menu__order {
+    display: none;
+  }
+  .hero__section__text {
+    padding: 0 32px;
+    line-height: 36px;
+    font-size: 24px;
+  }
+  .hero__section__text span {
+    color: #56FFB2;
+  }
+  .hero__section__button {
+    line-height: 30px;
+    font-size: 20px;
+  }
+  .articles__title {
+    min-height: 90px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 90px;
+  }
+  .articles__article {
+    margin: 40px auto 40px;
+  }
+  .articles__article__description__text:first-of-type {
+    display: none;
+  }
+  .articles__article__description__text:last-of-type {
+    display: block;
+  }
+  .articles__article__description__text--potatoes {
+    text-align: left;
+    margin: 25px 16px;
+  }
+  .articles__article__description__btn {
+    margin: 0 auto 12px;
+  }
+  .articles__article__description__btn--potatoes {
+    float: none;
+    margin: 0 auto 12px;
+  }
+  .bestsellers__title {
+    padding: 0;
+    height: 90px;
+    font-size: 24px;
+    line-height: 90px;
+  }
+  .bestsellers__products_list {
+    grid-template-columns: repeat(8, minmax(220px, 1fr));
+    overflow-x: scroll;
+    margin: 10px;
+  }
+  .orders__title {
+    height: 90px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 90px;
+  }
+  .order {
+    padding: 0;
+    line-height: 90px;
+    font-size: 24px;
+  }
+  .order__address {
+    margin: 20px auto;
+  }
+  .order__address__label {
+    font-size: 16px;
+  }
+  .order__address__input {
+    font-size: 16px;
+  }
+  .order__products {
+    margin: 20px auto;
+  }
+  .order__products__product__text {
+    font-size: 16px;
+  }
+  .footer__social__facebook {
+    font-size: 30px;
+  }
+  .footer__social__twitter {
+    font-size: 30px;
+  }
+  .footer__social__linkedin {
+    margin: 10px 20px;
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=mediaQueries2.css.map */

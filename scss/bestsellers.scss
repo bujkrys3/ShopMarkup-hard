@@ -1,0 +1,142 @@
+.bestsellers {
+  display: grid;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 1fr;
+  grid-template-rows: 140px 1fr;
+  max-width: 1440px;
+
+  &__title {
+    max-width: 1440px;
+    min-height: 32px;
+    text-align: center;
+    padding-right: 200px;
+    line-height: 140px;
+    color: #253D4E;
+    background-color: #DEF9EC;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+
+  &__products_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-row-gap: 74px;
+    grid-column-gap: 49px;
+    margin: 49px 169px;
+    background-color: #fff;
+
+    &__product {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 220px;
+      height: 320px;
+      z-index: 1;
+      border-radius: 2px;
+      box-shadow: 1px 1px 2px 2px gray;
+      background-color: #F5F5F5;
+
+      &:hover {
+        transform: scale(1.05);
+        transition: 0.4s;
+      }
+
+      &__category {
+        padding: 3px 12px;
+        line-height: 15px;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+      }
+
+      &__name {
+        padding: 6px 12px;
+        line-height: 20px;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+      }
+
+      &__price {
+        padding: 6px 12px 10px;
+        line-height: 22px;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 0.01em;
+        color: #3BB77E;
+
+        .strong {
+          line-height: 18px;
+          color: #ADADAD;
+          font-family: 'Quicksand';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          letter-spacing: 0.01em;
+          text-decoration-line: line-through;
+        }
+      }
+
+      &__button {
+        display: block;
+        width: 90%;
+        height: 32px;
+        align-self: center;
+        margin-bottom: 5px;
+        box-shadow: 2px 2px 8px rgba(121, 153, 115, 0.5);
+        border-radius: 4px;
+        background: #3BB77E;
+        color: #FFFFFF;
+        line-height: 150%;
+        text-align: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        cursor: pointer;
+      }
+
+      &__img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 916px;
+    height: 916px;
+    left: 982px;
+    top: 392px;
+    border-radius: 50%;
+    border: 3px solid #3BB77E;
+    background-color: transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 268px;
+    height: 268px;
+    left: -134px;
+    top: 840px;
+    border-radius: 50%;
+    border: 3px solid #3BB77E;
+    background-color: transparent;
+  }
+
+}

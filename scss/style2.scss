@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  position: relative;
+}
+
+@import 'animation.scss';
+@import 'hero.scss';
+@import 'articles.scss';
+@import 'bestsellers.scss';
+@import 'orders.scss';
+@import 'footer.scss';
+@import 'mediaQueries2.scss';
+
+
+//display
+//box model
+//colors
+//fonts

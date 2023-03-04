@@ -1,0 +1,55 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes position-menu {
+  0% {
+    top: -60px;
+    left: auto;
+  }
+
+  75% {
+    top: 20px;
+    left: auto;
+  }
+
+  100% {
+    top: 0;
+    left: auto;
+  }
+}
+
+@keyframes position {
+  0% {
+    left: -1000px
+  }
+
+  90% {
+    left: 100px
+  }
+
+  100% {
+    left: 0;
+  }
+
+}
