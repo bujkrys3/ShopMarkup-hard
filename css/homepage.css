@@ -8,6 +8,9 @@
 html {
   scroll-behavior: smooth;
 }
+html .arrow {
+  display: none;
+}
 
 .clearfix::after {
   content: "";
@@ -64,7 +67,7 @@ body {
             transform: rotate(0deg);
   }
 }
-@-webkit-keyframes position-menu {
+@-webkit-keyframes menuSlidsDown {
   0% {
     top: -60px;
     left: auto;
@@ -78,7 +81,7 @@ body {
     left: auto;
   }
 }
-@keyframes position-menu {
+@keyframes menuSlidsDown {
   0% {
     top: -60px;
     left: auto;
@@ -92,7 +95,7 @@ body {
     left: auto;
   }
 }
-@-webkit-keyframes position {
+@-webkit-keyframes textMoveFromLeftToCenter {
   0% {
     left: -1000px;
   }
@@ -103,7 +106,7 @@ body {
     left: 0;
   }
 }
-@keyframes position {
+@keyframes textMoveFromLeftToCenter {
   0% {
     left: -1000px;
   }
@@ -129,12 +132,12 @@ body {
   background-position: center;
   background-size: cover;
 }
-.hero__header {
+.hero .header {
+  position: fixed;
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
-  z-index: 99;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -147,159 +150,130 @@ body {
   width: 100%;
   background: #3BB77E;
 }
-.hero__header__menu {
+.hero .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.hero__header__menu__li {
-  list-style-type: none;
-}
-.hero__header__menu__hamburger {
-  display: none;
-}
-.hero__header__menu__bestsellers {
-  position: relative;
-  display: block;
-  margin: 0 20px;
-  color: white;
   text-decoration: none;
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  -webkit-animation: position-menu 1s both linear;
-          animation: position-menu 1s both linear;
-}
-.hero__header__menu__bestsellers:hover {
-  padding: 13.5px 0;
-  border-bottom: 4px solid white;
-}
-.hero__header__menu__articles {
-  display: block;
-  position: relative;
-  margin: 0 20px;
-  color: white;
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  text-decoration: none;
-  -webkit-animation: position-menu 1s 0.5s linear both;
-          animation: position-menu 1s 0.5s linear both;
-}
-.hero__header__menu__articles:hover {
-  padding: 13.5px 0;
-  border-bottom: 4px solid white;
-}
-.hero__header__menu__order {
-  display: block;
-  position: relative;
-  margin: 0 95px 0 20px;
-  color: white;
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  text-decoration: none;
-  -webkit-animation: position-menu 1s 1s linear both;
-          animation: position-menu 1s 1s linear both;
-}
-.hero__header__menu__order:hover {
-  padding: 13.5px 0;
-  border-bottom: 4px solid white;
-}
-.hero__header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: black;
-  text-decoration: none;
 }
-.hero__header__logo .img__background {
+.hero .header__logo .img__background {
   position: absolute;
   left: 25px;
   top: 9px;
   -webkit-animation: rotate 4s;
           animation: rotate 4s;
 }
-.hero__header__logo .img__vector_7 {
+.hero .header__logo .img__vector_7 {
   position: absolute;
   left: 36.39px;
   top: 11.89px;
   -webkit-animation: opacity 0.5s both;
           animation: opacity 0.5s both;
 }
-.hero__header__logo .img__vector_6 {
+.hero .header__logo .img__vector_6 {
   position: absolute;
   left: 51.45px;
   top: 20.39px;
   -webkit-animation: opacity 0.5s 0.5s both;
           animation: opacity 0.5s 0.5s both;
 }
-.hero__header__logo .img__vector_5 {
+.hero .header__logo .img__vector_5 {
   position: absolute;
   left: 27.89px;
   top: 30.55px;
   -webkit-animation: opacity 0.5s 1s both;
           animation: opacity 0.5s 1s both;
 }
-.hero__header__logo .img__vector_4 {
+.hero .header__logo .img__vector_4 {
   position: absolute;
   left: 46.55px;
   top: 35.45px;
   -webkit-animation: opacity 0.5s 1.5s both;
           animation: opacity 0.5s 1.5s both;
 }
-.hero__header__logo .img__vector_3 {
+.hero .header__logo .img__vector_3 {
   position: absolute;
   left: 28.31px;
   top: 19.38px;
   -webkit-animation: opacity 0.5s 2s both;
           animation: opacity 0.5s 2s both;
 }
-.hero__header__logo .img__vector_2 {
+.hero .header__logo .img__vector_2 {
   position: absolute;
   left: 35.38px;
   top: 31.05px;
   -webkit-animation: opacity 0.5s 2.5s both;
           animation: opacity 0.5s 2.5s both;
 }
-.hero__header__logo .img__vector_1 {
+.hero .header__logo .img__vector_1 {
   position: absolute;
   left: 47.05px;
   top: 27.36px;
   -webkit-animation: opacity 0.5s 3s both;
           animation: opacity 0.5s 3s both;
 }
-.hero__header__logo .img__vector {
+.hero .header__logo .img__vector {
   position: absolute;
   left: 43.36px;
   top: 12.31px;
   -webkit-animation: opacity 0.5s 3.5s both;
           animation: opacity 0.5s 3.5s both;
 }
-.hero__header__logo__name {
+.hero .header__name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 71px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 71px;
   font-family: "Merriweather";
-  font-style: normal;
-  font-weight: 400;
   font-size: 24px;
   line-height: 30px;
 }
-.hero__section {
+.hero .header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  list-style-type: none;
+}
+.hero .header .menu--mobile {
+  display: none;
+}
+.hero .header .menu__link {
+  position: relative;
+  display: block;
+  margin: 0 20px;
+  padding: 13.5px 0;
+  border-bottom: 4px solid transparent;
+  font-family: "Quicksand";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
+  color: white;
+}
+.hero .header .menu__link:hover {
+  border-bottom: 4px solid white;
+}
+.hero .header .menu__link--bestsellers {
+  -webkit-animation: menuSlidsDown 1s both;
+          animation: menuSlidsDown 1s both;
+}
+.hero .header .menu__link--articles {
+  -webkit-animation: menuSlidsDown 1s 0.5s both;
+          animation: menuSlidsDown 1s 0.5s both;
+}
+.hero .header .menu__link--orders {
+  -webkit-animation: menuSlidsDown 1s 1s both;
+          animation: menuSlidsDown 1s 1s both;
+}
+.hero .section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,134 +289,160 @@ body {
           align-items: center;
   height: 966px;
 }
-.hero__section__text {
+.hero .section__text {
   position: relative;
-  text-align: center;
   max-width: 586px;
   min-height: 162px;
-  color: #FFFFFF;
-  line-height: 54px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  -webkit-animation: position 2s linear both;
-          animation: position 2s linear both;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 54px;
+  -webkit-animation: textMoveFromLeftToCenter 2s linear both;
+          animation: textMoveFromLeftToCenter 2s linear both;
 }
-.hero__section__button {
+.hero .section__button {
   max-width: 200px;
   margin: 47px 0 128px;
   padding: 10px 34px;
   border-radius: 4px;
   border: none;
   background-color: #3BB77E;
-  color: #FFFFFF;
-  line-height: 150%;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
+  color: #FFFFFF;
+  line-height: 150%;
   letter-spacing: 0.01em;
   -webkit-animation: opacity 2s 2s linear both;
           animation: opacity 2s 2s linear both;
   cursor: pointer;
 }
-.hero__section__button:hover {
+.hero .section__button:hover {
   color: black;
 }
 
+@media (max-width: 376px) {
+  .hero .header .menu {
+    display: none;
+  }
+  .hero .header .menu--mobile {
+    display: block;
+    font-size: 20px;
+    color: black;
+  }
+  .hero .section__text {
+    padding: 0 32px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .hero .section__text strong {
+    color: #56FFB2;
+  }
+  .hero .section__button {
+    line-height: 30px;
+    font-size: 20px;
+  }
+}
 .articles {
   position: relative;
-  overflow: hidden;
   max-width: 1440px;
+  overflow: hidden;
 }
 .articles__title {
-  text-align: center;
   padding-right: 200px;
-  line-height: 140px;
   min-height: 32px;
-  color: #253D4E;
+  background-color: #DEF9EC;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  background-color: #DEF9EC;
+  text-align: center;
+  line-height: 140px;
+  color: #253D4E;
 }
 .articles__article {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 1050px;
   margin: 40px auto 200px;
-  -webkit-box-shadow: 2px 2px 8px rgba(121, 153, 115, 0.5);
-          box-shadow: 2px 2px 8px rgba(121, 153, 115, 0.5);
   border-radius: 4px;
   background-color: white;
+  -webkit-box-shadow: 2px 2px 8px rgba(121, 153, 115, 0.5);
+          box-shadow: 2px 2px 8px rgba(121, 153, 115, 0.5);
 }
-.articles__article__img {
-  float: left;
+.articles__article--potatoes {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.articles__article .article__img {
   max-width: 100%;
 }
-.articles__article__img--potatoes {
-  float: right;
+.articles__article .article__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.articles__article__description {
-  float: right;
-}
-.articles__article__description__title {
+.articles__article .article__title {
   margin: 50px 0 0 16px;
   height: 28px;
-  color: #253D4E;
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
+  color: #253D4E;
   line-height: 28px;
   letter-spacing: 0.01em;
 }
-.articles__article__description__text {
+.articles__article .article__text {
   max-width: 466px;
   margin: 25px 16px;
-  text-align: left;
-  color: #6C757D;
   font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
+  color: #6C757D;
+  text-align: left;
   line-height: 150%;
   letter-spacing: 0.01em;
 }
-.articles__article__description__text--potatoes {
+.articles__article .article__text--potatoes {
   margin-right: 31px;
   text-align: right;
 }
-.articles__article__description__text:last-of-type {
+.articles__article .article__text:last-of-type {
   display: none;
 }
-.articles__article__description__btn {
+.articles__article .article__btn {
   display: block;
-  max-width: 146px;
+  width: 146px;
   height: 38px;
   margin-left: 10px;
   -webkit-box-shadow: 2px 2px 8px rgba(121, 153, 115, 0.5);
           box-shadow: 2px 2px 8px rgba(121, 153, 115, 0.5);
   border-radius: 4px;
-  text-align: center;
   background: #3BB77E;
   color: #FFFFFF;
   font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
+  text-align: center;
   line-height: 150%;
   letter-spacing: 0.01em;
 }
-.articles__article__description__btn--potatoes {
-  float: right;
-  margin-right: 31px;
+.articles__article .article__btn--potatoes {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: 0;
+  margin-right: 10px;
 }
-.articles__article__description--potatoes {
-  float: left;
-}
-.articles::before {
+.articles__article::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -454,7 +454,7 @@ body {
   border-radius: 50%;
   background-color: transparent;
 }
-.articles::after {
+.articles__article::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -787,33 +787,6 @@ body {
 }
 
 @media (max-width: 376px) {
-  .hero__header__menu__hamburger {
-    display: block;
-    margin: 0 20px 0 0;
-    color: black;
-    font-size: 20px;
-  }
-  .hero__header__menu__bestsellers {
-    display: none;
-  }
-  .hero__header__menu__articles {
-    display: none;
-  }
-  .hero__header__menu__order {
-    display: none;
-  }
-  .hero__section__text {
-    padding: 0 32px;
-    line-height: 36px;
-    font-size: 24px;
-  }
-  .hero__section__text span {
-    color: #56FFB2;
-  }
-  .hero__section__button {
-    line-height: 30px;
-    font-size: 20px;
-  }
   .articles__title {
     min-height: 90px;
     padding: 0;
@@ -887,4 +860,4 @@ body {
     margin: 10px 20px;
     font-size: 30px;
   }
-}/*# sourceMappingURL=style2.css.map */
+}/*# sourceMappingURL=homepage.css.map */
